@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Projeto Integrador III</title>
+        <!-- Favicon-->
+        <link rel="icon" href="https://unisal.br/wp-content/uploads/2021/10/cropped-512-32x32.jpg" sizes="32x32">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"> solarSon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Marcas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">história</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Membros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Calculo.html">Faça seu Orçamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calculoEletrodomestico.html">Gasto Eletrodoméstico</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Uma iniciativa do grupo Fulcro... </div>
+                <div class="masthead-heading text-uppercase">Sua economia está aqui !
+                </div>
+                <a class="btn btn-warning btn-xl text-uppercase" href="#services">Saiba mais </a>
+            </div>
+        </header>
+        <!-- Serviços-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Energia fotovoltaica</h2>
+                    <h3 class="section-subheading text-muted">O que é, vantagens e seu futuro no Brasil.
+                    </h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="data:image/png;base64,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"/>
+                        </span>
+                        <h4 class="my-3">O que é ?</h4>
+                        <p class="text-muted">A energia solar fotovoltaica é a energia obtida através da conversão direta da luz em eletricidade por meio do efeito fotovoltaico. A célula fotovoltaica, um dispositivo fabricado com material semicondutor, é a unidade fundamental desse processo de conversão.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAFX0lEQVR4nO2dy4sdRRSHv5vJyNxMAkIUiQwYQZ2BiChRwYUPBNFVBBFfmZClC0nMnxBUlPggCD7xuRDRAR+ICq4EX6gL48bHmHExEScuRExmRhNRr4tinL5d1bdfVV3VXeeDWjRzq+rU+c3t7lPndF8QBEEQBLf0gVlgDpgHVoBBR9sq8D4wbsVzDtgL/IR/RzXVloDtVjxnmXHgWfw7qMl2ErjMhvNc8DT+HdRk+wu40YrnHLAX3eAV4BCwE5j0Z1p89NGvGUeBC30aFTOz6N+Mi7xa5Jdtvg2YY1iQQ37N8cr1wB/AAZ9G/MCwIDt9GuORS4ETrPvhMLDBhyHLDAuy2YcRnjkfFY8k/fAPcLUPY9J3V7FxFvA9uh+8nbZiFmQT8Cm6Dx70aVSsgowBb6Ov/xWg59GuKAXpAS+gr/09YKNHu4A4BXkIfd1fEsgNTWyC7ENf8zxw9og+ZzZg1//EJMjNwN8Mrzdv+70PfOTetHViEeQ64E+G13qC0dvvY8AbNOyXGAS5BPid4XWeQm2VZNEDXiLbL6bd8XngdWA3MFHV2K4Lsh34GT0Kvy2n38OM9ktevuUYsKeKwV0WJCsK31+gb55f8gRZa89QMl/fVUH61IvCbQkyQMU8hemiIBuBd9HX9jLFo/CyfpkELked6lYN/WeLGt81QXrAi+jrKlvqU8cv08BCqv8xCl7ouybIA+hr+oLydQF1/TKN/k25q4mJQ+Ie9PXkReFZ2PDLI6kxXmtq4hC4FXU7m1zLEir5VAUbfrkC/Z+jkYl9cy3lo/A8bPhlc2qM5aYm9snFwG8Mr+E0cEPNcW35pfQ4bRZkCnX3krS/SBRehNYKsgE/xQBbge/Q7S8ShRehtYIcBv4FDlboW5U+8Am67TZz4a0U5ECq7+O4r2UaA95Et9t2Lrx1gmxDVfml+89RY+s5hx7wvGFOFw/ctE4QgKuAXw1jfIbaabXN/Ya5XOXCWykIwA5g0TDON8B5FcbL4m7DHEeBcyzOkaS1ggCcCxwxjLWEnSeUdlE+F16XVgsCsAX4wDDeMnBTjXGvwX4UXoTWCwJwBvCqYczTlMgHJNiBmyi8CJ0QBNSd0EHDuGVjlSn0a5OtKLwInRFkjXvRd18HwHPkl2tuBb419G2yIr1zggDcgn7+H6CKnDdl9OkDHxv6NF2R3klBIDtW+Rw9cZQsTEs2HxXpnRUEsmOVBeCCxOeeMHzGV0V6pwWB7FjlOOq5xvsMf/NZkd55QUBVkX9omNO0J1Y1F26LKASB7Fgl2UJ4IUw0gkB2rDKgmSi8CFEJskY6VmkqCi9ClIKAirxPoYS53cP8WUQrCKic/D5Pc2fRiCCm4Cr9Ia+PBAeELb+MHMfLuzuEbESQwBBBAkMECQwRJDBEkMAQQQJDBAkMESQwRJDAEEECQwQJDJMgK6njIN6q5pktqeOTriYyCXI8dTztavIWMZM6/sXVRCZBjqSOQ0oS+eKO1PFXTU6+m+EEygpxf0tm0Ktg7qwxXulE1wT6o8ULxCnKDPAjw75YpN4jepUyj3sMHVeBR4Er6fYPukyi1vgY5vqwQi+MGUHlVHBsP3lUpD1ZxoEZVBZkHBEl2Z7CTk1xZUHWmEW/psTUFql/mkoyUpCilRMTqGc7dqF+6GSK7l5HVlG/wfU18A7wFqpOzBZpEXqZB0IjjBRE9rICQwQJDBEkMFw+GjbyXCmYkW9IYIgggSGCBIZLQSTzqJObeXQpiGQedXIzjy4FkcyjjmQeA8J25rE0knlcx0XmsRKSeXSXeayMJLn0ZiPzWBnJPA43W5nH2kjmscBpqukNP8k8CoIgCIIj/gPB5wqITpS7vgAAAABJRU5ErkJggg=="/>
+                        </span>
+                        <h4 class="my-3">Vantagens</h4>
+                        <p class="text-muted">Não polui, é renovável, limpa e silenciosa, pode ser usada em áreas isoladas da rede elétrica, necessidade mínima de manutenção, muito fácil de instalar e é barato para manter.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                          <img src="data:image/png;base64,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"/>
+                        </span>
+                        <h4 class="my-3">Futuro no Brasil</h4>
+                        <p class="text-muted">A previsão é que até 2023, seja feito um investimento de mais de R$ 20 bilhões na geração de energia solar no Brasil. Esse valor pode gerar um retorno de aproximadamente R$ 100 milhões em 2030 para o país.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Marcas disponíveis para orçamento</h2>
+                    <h3 class="section-subheading text-muted">Conheça um pouco mais sobre cada marca e veja qual melhor lhe atende
+                    </h3>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!--item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" style="height: 15%;" src="assets/img/portfolio/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Jinko Solar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" style="width: 72%;" src="assets/img/portfolio/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">SUNOVA SOLAR</div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!--item 3-->
+                        <div class="portfolio-item" >
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" style="width: 150%;" src="assets/img/portfolio/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <br>
+                                <div class="portfolio-caption-heading">RESUN SOLAR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Sobre-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Historia da energia fotovoltaica</h2>
+                    <h3 class="section-subheading text-muted">Nossa linha cronologica até chegarmos nos dias de hoje e previsões para o futuro</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="2520" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1839-1883</h4>
+                                <h4 class="subheading">Onde tudo começou.</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">A origem da energia solar deu-se em 1839, após a pesquisa do físico francês Alexandre Edmond Becquerel, que descobriu o efeito fotovoltaico, e com a criação da primeira célula fotovoltaica em 1883, por Charles Fritts.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1921 </h4>
+                                <h4 class="subheading">Ganhando relevância </h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">80 anos depois, Albert Einstein recebe o Prêmio Nobel de Física, sendo reconhecido também por explicar este efeito em um de seus artigos científicos publicado anos antes, em 1905</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1954-1956 </h4>
+                                <h4 class="subheading">Começo da produção em massa</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> Apesar da descoberta, a primeira célula fotovoltaica de silício foi lançada somente no início da década de 50 pela Bell Laboratories, divulgada pelo jornal The New York Times da época como “o começo de uma nova era”.  <br>
+                                Dois anos depois, já era possível comprar células solares, porém, por um custo alto e praticamente inacessível;
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1978</h4>
+                                <h4 class="subheading">Chegando as grande massas</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> Ano no qual as calculadoras movidas a energia solar explodiram em todo o mundo. Mas o progresso adicional foi relativamente lento nas duas décadas seguintes</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2022</h4>
+                                <h4 class="subheading">A energia do futuro no presente</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Agora, aqui estamos hoje com um número crescentes de empresas que investem no segmento, e milhares de brasileiros já conseguiram incorporar esta tecnologia em seu cotidiano com a Energia Solar para Residência.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <a href="Calculo.html"> 
+                            <div class="timeline-image">
+                                <h4>
+                                    Faça parte
+                                    <br />
+                                    Desta
+                                    <br />
+                                    Historia!
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Equipe-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Equipe integradora</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Breno Marques de Morais</h4>
+                            <p class="text-muted">RA: 210017824</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/breno-marques-11b685190/" aria-label="Breno Marques de Morais LinkedIn"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Davi Ricci Archângelo</h4>
+                            <p class="text-muted">RA: 210017523</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://br.linkedin.com/in/davi-ricci-archangelo-b3b581191" aria-label="Davi Ricci Archângelo LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Higor Caetano Dias</h4>
+                            <p class="text-muted"> RA: 210015889</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/higor-dias-73261919a" aria-label="Higor Caetano Dias LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="..." />
+                            <h4>Pedro Victoriano da Silva</h4>
+                            <p class="text-muted">RA: 210017057</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/pedro-victoriano-2b33b41a2" aria-label="Pedro Victoriano da Silva LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="..." />
+                            <h4>Vitor Cesar Lulio</h4>
+                            <p class="text-muted">RA: 210018003 </p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/vitor-cesar-lulio" aria-label="Vitor Cesar Lulio LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><u>Projeto realizado com fins educativos e didáticos!</u></p></div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <!-- Rodapé-->
+        <footer class="footer py-4" style="background-color:rgb(226, 225, 225);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start"><b>Venha fazer parte da nossa instituição!</b></div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/unisal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/unisalamericana/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modais-->
+        <!-- Marca 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalhes sobre as marcas-->
+                                    <h2 class="text-uppercase">Jinko Solar</h2>
+                                    <p class="item-intro text-muted">Informações complementares</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>A Jinko Solar Co., Ltd. (a “Empresa” ou “Jinko Solar”) (SSE: 688223)  é uma das empresas de tecnologia  solar  mais famosas  e inovadoras do mundo . Seu negócio abrange  os principais elos da cadeia da indústria fotovoltaica, com foco  na P&D de produtos fotovoltaicos  integrados  e soluções de energia limpa. Atualmente, os produtos da Jinko Solar atendem a mais de 3.000 clientes em mais de 160 países ao redor do mundo, e a empresa foi classificada como a número 1 em remessas globais de módulos por muitos anos. Até o final de março de 2022, as remessas cumulativas de módulos da Jinko Solar ultrapassaram 100 GW. A Jinko Solar é líder de opinião do setor em várias estruturas internacionais, como B20, e também é a primeira empresa de energia solar a aderir à iniciativa verde RE100.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Missão:</strong>
+                                            Otimizar o portfólio de energia e assumir a responsabilidade de possibilitar um futuro sustentável.
+                                        </li>
+                                        <li>
+                                            <strong>Visão:</strong>
+                                            Fornecer uma solução completa para energia limpa e tornar-se líder do setor.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-warning btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Marca 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Detalhes sobre as marcas-->
+                                        <h2 class="text-uppercase">SUNOVA SOLAR</h2>
+                                        <p class="item-intro text-muted">informações complementares</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                        <p>Fundada em 2016, a Sunova Solar é uma empresa multinacional fornecedora de soluções de sistemas integrados com foco em P&D e fabricação de produtos solares distribuídos globalmente e no desenvolvimento de usinas fotovoltaicas.
+
+                                            Atualmente, a Sunova Solar opera três fábricas na China e no Vietnã, com capacidade integrada de 3GW de módulos solares. Ao mesmo tempo, a SUNOVA estabeleceu suas próprias filiais e escritórios na Alemanha, Brasil, Polônia, Holanda, Ucrânia, Brasil, México, Vietnã e outros países no exterior. Além disso, possui mais de 100 parceiros líderes do setor em mais de 20 países e regiões ao redor do mundo. Em junho de 2021, a Sunova Solar enviou quase 2 GW de módulos cumulativos em todo o mundo.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Missão:</strong>
+                                                Nosso objetivo é nos tornar a empresa de energia mais orientada ao cliente no mundo.
+                                            </li>
+                                            <li>
+                                                <strong>Visão:</strong>
+                                                Mirando no mercado fotovoltaico distribuído, estamos dedicados a transformar a Sunova em uma marca global e um fornecedor líder de energia solar.
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-warning btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            fechar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Marca 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalhes sobre as marcas-->
+                                    <h2 class="text-uppercase">RESUN SOLAR</h2>
+                                    <p class="item-intro text-muted">Informações complementares</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Resun Group foi fundado em 2005, especializado em fornecer módulo solar de alta qualidade e altamente econômico, 100% obtém duas bases de produção - "Resun solar" e "Resun solar" na província de Jiangsu da cidade de Changzhou, ambos são auditados pela ISO9001.
+
+                                        Após 17 anos de desenvolvimento, a capacidade anual da Resun atingiu 3GW, é flexível para módulos pequenos e grandes com faixa de potência de 5W a 670W, e a nova tecnologia também abrange - módulo preto completo e módulo bifacial.
+                                        
+                                        A equipe Resun insiste que nosso objetivo é ser conveniente para os clientes e construir uma cooperação vantajosa para todos.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Missão:</strong>
+                                            Otimizar o portfólio de energia e assumir a responsabilidade de possibilitar um futuro sustentável.
+                                        </li>
+                                        <li>
+                                            <strong>Vision:</strong>
+                                            Fornecer uma solução completa para energia limpa e tornar-se líder do setor.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-warning btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+</html>
